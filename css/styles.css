@@ -553,7 +553,8 @@ ul {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover {
+.close-btn:hover,
+.close-btn:focus {
   background-color: #404bbf;
   border: none;
 }
@@ -563,9 +564,8 @@ ul {
   fill: #ffffff;
 }
 
-.close-btn.close-img {
+.close-img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #2e2f42;
 }
 
 .call-back-text {
@@ -619,6 +619,10 @@ ul {
   fill: #4d5ae5;
 }
 
+.input-field:focus {
+  fill: #4d5ae5;
+}
+
 .call-back-form {
   max-width: 408px;
 }
@@ -650,7 +654,7 @@ ul {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comment::placeholder {
+.comment:focus {
   border-color: #4d5ae5;
 }
 
@@ -670,13 +674,13 @@ ul {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  ransition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .terms-ckbox:checked .terms-span {
