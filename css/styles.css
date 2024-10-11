@@ -526,6 +526,7 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 4px;
   width: 408px;
   min-height: 584px;
@@ -697,10 +698,6 @@ ul {
   display: block;
   min-width: 169px;
   height: 56px;
-}
-
-.send-btn:hover,
-.send-btn:focus {
   background-color: #404bbf;
   cursor: pointer;
   font-family: "Roboto", sans-seri;
